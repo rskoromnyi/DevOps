@@ -10,8 +10,10 @@
 ## decrypt 
 ## for decryption create folder "decrypted_gzip" and "decrypted_none" and run examples below matching encryption examples above
 ## gzip example
+# mkdir decrypted_gzip
 # openssl enc -aes-256-cbc -d -pass pass:1234 < compressed.tar.gzip.enc | tar --extract --gzip -C decrypted_gzip/
 ## none example
+# mkdir decrypted_none
 # openssl enc -aes-256-cbc -d -pass pass:1234 < compressed.tar.none.enc | tar --extract -C decrypted_none/
 
 
